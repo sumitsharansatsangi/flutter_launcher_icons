@@ -11,8 +11,8 @@ class WindowsIconGenerator extends IconGenerator {
   WindowsIconGenerator(IconGeneratorContext context)
       : super(context, 'Windows');
 
-  @override
-  Future<void> createIcons() async {
+@override
+Future<void> createIcons() async {
     final imgFilePath = path.join(
       context.prefixPath,
       context.windowsConfig!.imagePath ?? context.config.imagePath,

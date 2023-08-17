@@ -1,10 +1,11 @@
+// ignore_for_file: public_member_api_docs
+
 import 'dart:convert';
 import 'dart:io';
 
 import 'package:image/image.dart';
 import 'package:path/path.dart' as path;
 
-import 'custom_exceptions.dart';
 
 Image createResizedImage(int iconSize, Image image) {
   if (image.width >= iconSize) {
